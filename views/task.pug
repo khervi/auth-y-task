@@ -1,0 +1,13 @@
+html
+    head=title
+    body
+        div
+            if error
+                div #{error}
+            form(action="/task" method="POST")
+                input(type="text", name="description")
+                button add Task
+                a(href="/") -Salir-
+                for result in task
+                    ul 
+                        li #{result.description}

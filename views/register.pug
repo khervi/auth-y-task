@@ -1,0 +1,18 @@
+div
+    if error
+        div #{error}
+
+    h4 Register
+
+    form(method="post")
+        div
+            input(type="text" name="username" placeholder="username")
+        div
+            input(type="text" name="firstName" placeholder="first name")
+        div
+            input(type="text" name="lastName" placeholder="last name")
+        div
+            input(type="password" name="password" placeholder="password")
+        button Register
+
+    a(href="/auth/login") Login

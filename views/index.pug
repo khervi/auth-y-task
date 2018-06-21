@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    header
+        h1=title
+        h2 Bienvenido #{user.firstName} #{user.lastName}
+        form(action="/auth/logout" method="POST")
+            button Logout
+            a(href="/task") TASK
